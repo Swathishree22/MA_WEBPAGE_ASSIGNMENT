@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GT Soap - Handmade Salt Soaps</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:#f0efe6;color:#4b3a2f}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+nav{position:fixed;width:100%;top:0;background:#7a5c47;padding:15px 40px;display:flex;justify-content:space-between;align-items:center;color:#fff;z-index:1000}
+nav h2{font-family:'Playfair Display',serif}
+nav ul{list-style:none;display:flex;gap:25px}
+nav a{text-decoration:none;color:#fff;font-weight:500;transition:.3s}
+nav a:hover{opacity:.7}
+
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:100px 20px;text-align:center}
+
+#home{flex-direction:column;background:#e8e4d8}
+#home img{width:320px;max-width:90%;animation:float 4s ease-in-out infinite}
+#home h1{font-family:'Playfair Display',serif;font-size:3rem;margin-top:20px}
+#home p{margin-top:15px;font-size:1.1rem;color:#6d5b4f}
+.btn{margin-top:25px;padding:12px 28px;background:#7a5c47;color:#fff;border:none;border-radius:30px;cursor:pointer;font-weight:600;transition:.3s}
+.btn:hover{background:#5f4636;transform:scale(1.05)}
+
+#products{background:#f7f5ec;flex-direction:column}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;max-width:1100px;width:100%;margin-top:40px}
+.card{background:#fff;padding:25px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-10px)}
+.card h3{margin-bottom:10px;font-family:'Playfair Display',serif}
+.price{margin-top:10px;font-weight:700;color:#7a5c47}
+
+#about{background:#e8e4d8;flex-direction:column}
+#about h2{font-family:'Playfair Display',serif;font-size:2.5rem}
+#about p{max-width:750px;margin-top:20px;line-height:1.7;color:#5c4a3f}
+
+#contact{background:#f7f5ec;flex-direction:column}
+form{max-width:500px;width:100%;margin-top:30px}
+input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1px solid #ccc}
+textarea{resize:none;height:120px}
+
+footer{background:#7a5c47;color:#fff;text-align:center;padding:20px}
+
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-15px)}100%{transform:translateY(0)}}
+
+@media(max-width:600px){#home h1{font-size:2rem}}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>GT Soap</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="home">
+<img src="logo.png" alt="GT Handmade Soap Logo">
+<h1>Handmade Salt Soaps</h1>
+<p>Natural • Gentle • Artisan Crafted | 3oz / 85.05g</p>
+<button class="btn">Shop Now</button>
+</section>
+
+<section id="products">
+<h2>Our Soap Collection</h2>
+
+<div class="grid">
+
+<div class="card">
+    <img src="https://i.pinimg.com/1200x/5c/74/ef/5c74ef8f60ad08da2796f21f3830711a.jpg" alt="Coconut Salt Bar">
+    <h3>Coconut Salt Bar</h3>
+    <p>Infused with coconut extracts for deep hydration.</p>
+    <div class="price">₹180</div>
+</div>
+
+<div class="card">
+    <img src="https://i.pinimg.com/1200x/db/4e/12/db4e123d312a8694921b5e38e1c30c51.jpg" alt="Lavender Bliss">
+    <h3>Lavender Bliss</h3>
+    <p>Calming lavender scent with mineral salts.</p>
+    <div class="price">₹200</div>
+</div>
+
+<div class="card">
+    <img src="https://i.pinimg.com/1200x/37/01/16/370116937e40e36bad21735fb9848dbf.jpg" alt="Charcoal Detox">
+    <h3>Charcoal Detox</h3>
+    <p>Activated charcoal for deep cleansing.</p>
+    <div class="price">₹190</div>
+</div>
+
+<div class="card">
+    <img src="https://i.pinimg.com/1200x/26/e3/5e/26e35e87acec81bb2a3d98bf04031f67.jpg" alt="Rose Clay Glow">
+    <h3>Rose Clay Glow</h3>
+    <p>Gentle exfoliation with rose clay minerals.</p>
+    <div class="price">₹210</div>
+</div>
+
+<div class="card">
+    <img src="https://i.pinimg.com/1200x/41/fe/5e/41fe5e93617ad44177b008f75a7b41ee.jpg" alt="Vanilla Oat Cream">
+    <h3>Vanilla Oat Cream</h3>
+    <p>Soothing oats blended with vanilla essence.</p>
+    <div class="price">₹195</div>
+</div>
+
+<div class="card">
+    <img src="https://i.pinimg.com/1200x/4c/70/a7/4c70a7804833d11acb87e8cae7836199.jpg" alt="Mint Refresh Bar">
+    <h3>Mint Refresh Bar</h3>
+    <p>Cooling mint sensation with sea salt.</p>
+    <div class="price">₹185</div>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About GT Soap</h2>
+<p>GT Soap creates handmade salt soaps using premium natural ingredients. Each bar is carefully crafted to nourish your skin while delivering a luxurious cleansing experience. We believe in purity, sustainability, and artisan quality in every product we create.</p>
+<button class="btn">Learn More</button>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</section>
+
+<footer>
+© 2026 GT Soap | Handmade with Care
+</footer>
+
+</body>
+</html>
